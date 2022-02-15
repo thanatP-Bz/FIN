@@ -109,7 +109,7 @@ const textObserve = new IntersectionObserver(revealContent, {
   threshold: 0.15,
 });
 
-textObserve.observe(about);
+/* textObserve.observe(about); */
 
 //obsever Concept
 const concept = document.querySelector(".concept");
@@ -130,8 +130,6 @@ const observerConcept = new IntersectionObserver(revealConcept, {
   threshold: 0.4,
 });
 
-observerConcept.observe(concept);
-
 //observe projects
 const projects = document.querySelector(".projects");
 const projectContainer = document.querySelector(".project-grid__container");
@@ -151,8 +149,6 @@ const observeProjects = new IntersectionObserver(revealProjects, {
   threshold: 0.2,
 });
 
-observeProjects.observe(projects);
-
 //observe profile
 const profile = document.querySelector(".profile");
 const profileImg = document.querySelector(".proflie-image_container");
@@ -171,8 +167,6 @@ const revealProfile = (entries, observer) => {
 const observeProfile = new IntersectionObserver(revealProfile, {
   threshold: 0.4,
 });
-
-observeProfile.observe(profile);
 
 //oberve news
 const newsBox = document.querySelectorAll(".news-box");
@@ -211,5 +205,3 @@ const revealBtn = (entries) => {
 const observeBtn = new IntersectionObserver(revealBtn, {
   threshold: 0.1,
 });
-
-observeBtn.observe(newsBtn);
