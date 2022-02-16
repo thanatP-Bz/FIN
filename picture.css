@@ -169,8 +169,6 @@ li {
   }
 }
 
-@import "../pictureIndex/pictureMain.css";
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -428,6 +426,13 @@ li {
 
   .gallery-container {
     column-count: 1;
+  }
+}
+
+@media (max-width: 475px) {
+  .light-box__img {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
