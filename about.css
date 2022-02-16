@@ -496,7 +496,8 @@ li {
   font-size: 3rem;
 }
 
-.about-lastest-container {
+.about-lastest-container,
+.about-lastest-container-2 {
   max-height: 500px;
   width: 100%;
   display: grid;
