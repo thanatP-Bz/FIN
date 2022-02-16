@@ -109,7 +109,7 @@ const textObserve = new IntersectionObserver(revealContent, {
   threshold: 0.15,
 });
 
-/* textObserve.observe(about); */
+textObserve.observe(about);
 
 //obsever Concept
 const concept = document.querySelector(".concept");
@@ -130,6 +130,8 @@ const observerConcept = new IntersectionObserver(revealConcept, {
   threshold: 0.4,
 });
 
+observerConcept.observe(concept);
+
 //observe projects
 const projects = document.querySelector(".projects");
 const projectContainer = document.querySelector(".project-grid__container");
@@ -149,6 +151,8 @@ const observeProjects = new IntersectionObserver(revealProjects, {
   threshold: 0.2,
 });
 
+observeProjects.observe(projects);
+
 //observe profile
 const profile = document.querySelector(".profile");
 const profileImg = document.querySelector(".proflie-image_container");
@@ -167,6 +171,8 @@ const revealProfile = (entries, observer) => {
 const observeProfile = new IntersectionObserver(revealProfile, {
   threshold: 0.4,
 });
+
+observeProfile.observe(profile);
 
 //oberve news
 const newsBox = document.querySelectorAll(".news-box");
@@ -206,66 +212,4 @@ const observeBtn = new IntersectionObserver(revealBtn, {
   threshold: 0.1,
 });
 
-/* about observer */
-const contentHistory = document.querySelector(".history-text__container");
-const contentHistoryImg = document.querySelector(".history-img__container");
-
-const revealHistory = (entries) => {
-  [entry] = entries;
-  if (!entry.isIntersecting) return;
-  else {
-    contentHistoryImg.classList.add("show-content_img");
-    contentHistory.classList.add("show-content");
-  }
-};
-
-const observeHistory = new IntersectionObserver(revealHistory, {
-  threshold: 0.1,
-  rootMargin: "0px 0px -200px 0px",
-});
-
-observeHistory.observe(contentHistoryImg, contentHistory);
-
-//observe lastest
-const contentLastest = document.querySelectorAll(
-  ".about-lastest__text--container"
-);
-const lastestHeader = document.querySelector(".about-lastest__h1");
-
-const revealLastest = (entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    else {
-      entry.target.classList.add("show-lastest");
-      lastestHeader.classList.add("show-lastest");
-    }
-  });
-};
-
-const observeLatest = new IntersectionObserver(revealLastest, {
-  threshold: 0.1,
-});
-
-contentLastest.forEach((item) => {
-  observeLatest.observe(item);
-});
-
-const contentImg = document.querySelectorAll(".about-lastest-img__container");
-
-const revealLastestImg = (entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    else {
-      entry.target.classList.add("show-lastest__img");
-    }
-  });
-};
-
-const observeLatestImg = new IntersectionObserver(revealLastestImg, {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
-});
-
-contentImg.forEach((item) => {
-  observeLatestImg.observe(item);
-});
+observeBtn.observe(newsBtn);
