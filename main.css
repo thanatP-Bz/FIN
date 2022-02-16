@@ -117,11 +117,6 @@ p {
   .news {
     padding: 2rem 1.5rem;
   }
-
-  .logo,
-  .navbar {
-    transform: translateX(0);
-  }
 }
 
 /* header */

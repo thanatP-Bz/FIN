@@ -78,7 +78,8 @@ const revealLightBox = (entries) => {
 };
 
 const observeLightbox = new IntersectionObserver(revealLightBox, {
-  threshold: 0.1,
+  threshold: 0,
+  rootMargin: "0px 0px 100px 0px",
 });
 
 lightBox.forEach((item) => {

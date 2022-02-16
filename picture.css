@@ -169,6 +169,21 @@ li {
   }
 }
 
+@media screen and (max-width: 475px) {
+  #header .showcase .reveal-content {
+    transform: translateY(0);
+  }
+
+  @keyframes reveal {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -421,7 +436,7 @@ li {
 
 @media (max-width: 800px) {
   .gallery {
-    padding: 1rem 1rem;
+    padding: 1rem 0.5rem;
   }
 
   .gallery-container {

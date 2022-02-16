@@ -176,8 +176,6 @@ li {
 }
 
 /* navbar */
-@import "../aboutIndex/aboutMain.css";
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -458,6 +456,13 @@ li {
 
   .history-text__container {
     padding: 1rem;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .history-img__container {
+    transform: translateX(0);
+    opacity: 1;
   }
 
   .history-text__control h1 {
@@ -470,7 +475,7 @@ li {
   }
 
   .history-text__control p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -491,8 +496,7 @@ li {
   font-size: 3rem;
 }
 
-.about-lastest-container,
-.about-lastest-container-2 {
+.about-lastest-container {
   max-height: 500px;
   width: 100%;
   display: grid;
@@ -592,6 +596,8 @@ li {
 
   .about-lastest__h1 {
     padding: 1.4rem;
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .about-lastest__h1 h1 {
@@ -604,7 +610,13 @@ li {
   }
 
   .about-lastest-text__control .fin-p {
-    font-size: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .about-lastest-img__container,
+  .about-lastest__text--container {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
