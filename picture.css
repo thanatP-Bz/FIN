@@ -102,11 +102,11 @@ li {
 /* header */
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-    url(../img/gallery-2.jpg);
+    url(../img/gallery-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 70vh;
+  min-height: 100vh;
   position: relative;
   overflow-x: hidden;
   width: 100%;

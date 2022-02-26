@@ -191,6 +191,7 @@ const revealNewsBox = (entries) => {
 
 const observeNews = new IntersectionObserver(revealNewsBox, {
   threshold: 0,
+  rootMargin: "-100px 0px 0px 0px",
 });
 
 newsBox.forEach((item) => {

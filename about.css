@@ -109,7 +109,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 100vh;
   position: relative;
   overflow-x: hidden;
   width: 100%;
@@ -152,7 +152,7 @@ li {
 @media screen and (max-width: 1000px) {
   #header {
     position: relative;
-    height: 70vh;
+    height: 100vh;
   }
 
   #header .showcase {
